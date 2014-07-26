@@ -28,14 +28,9 @@ module.exports = (grunt) ->
             dist:
                 src: 'build/Package.nuspec'
                 dest: 'dist/'
-                
         nugetpush:
             dist:
                 src: 'dist/*.nupkg'
-        ###
-        nugetrestore:
-            test:
-        ###
         template:
             nuspec:
                 options:
