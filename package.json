@@ -1,6 +1,6 @@
 {
     "name": "glyphicon",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "title": "GlyphIcon",
     "description": "Razor helpers for Bootstrap 3 icons",
     "keywords": ["razor", "bootstrap", "icons"],

@@ -19,11 +19,16 @@ module.exports = (grunt) ->
             build: ['build/']
             dist: ['dist/']        
         copy: 
+            dist:
+                expand: true
+                cwd: '<%= copy.src.dest %>/'
+                src: 'GlyphIcon.cshtml'
+                dest: 'dist/'
             src:
                 expand: true
                 cwd: 'src/'
                 src: ['GlyphIcon.cshtml']
-                dest: 'build/Content/App_Code/'    
+                dest: 'build/Content/App_Code/'
         nugetpack:
             dist:
                 src: 'build/Package.nuspec'
@@ -38,7 +43,7 @@ module.exports = (grunt) ->
                         author: '<%= pkg.author.name %>'
                         copyright: '<%= copyright %>'
                         description: '<%= pkg.description %>'
-                        icon: 'http://kodefuguru.com/icon'
+                        icon: 'http://kodefuguru.com/glyphicon/logo'
                         id: '<%= pkg.name %>'
                         language: 'en-US'
                         licenseUrl: "<%= _.pluck(pkg.licenses, 'url')[0] %>"
@@ -70,6 +75,6 @@ module.exports = (grunt) ->
 
     grunt.registerTask 'test', []
     grunt.registerTask 'build', ['clean:build', 'copy:src', 'usebanner', 'template']
-    grunt.registerTask 'dist', ['clean:dist', 'nugetpack']
+    grunt.registerTask 'dist', ['clean:dist', 'nugetpack', 'copy:dist']
     grunt.registerTask 'default', ['build', 'test', 'dist']
  
