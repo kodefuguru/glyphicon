@@ -1,806 +1,808 @@
-﻿@helper ByName(string name)
+﻿@helper ByName(string name, string css = "")
 {
-    <span class="glyphicon glyphicon-@name"></span>
+    css += " glyphicon glyphicon-" + name;
+    css = css.Trim();    
+    <span class="@css"></span>
 }
 
-@helper Asterisk()
+@helper Asterisk(string css = "")
 {
     @GlyphIcon.ByName("asterisk")
 }
-@helper Plus()
+@helper Plus(string css = "")
 {
     @GlyphIcon.ByName("plus")
 }
-@helper Euro()
+@helper Euro(string css = "")
 {
     @GlyphIcon.ByName("euro")
 }
-@helper Minus()
+@helper Minus(string css = "")
 {
     @GlyphIcon.ByName("minus")
 }
-@helper Cloud()
+@helper Cloud(string css = "")
 {
     @GlyphIcon.ByName("cloud")
 }
-@helper Envelope()
+@helper Envelope(string css = "")
 {
     @GlyphIcon.ByName("envelope")
 }
-@helper Pencil()
+@helper Pencil(string css = "")
 {
     @GlyphIcon.ByName("pencil")
 }
-@helper Glass()
+@helper Glass(string css = "")
 {
     @GlyphIcon.ByName("glass")
 }
-@helper Music()
+@helper Music(string css = "")
 {
     @GlyphIcon.ByName("music")
 }
-@helper Search()
+@helper Search(string css = "")
 {
     @GlyphIcon.ByName("search")
 }
-@helper Heart()
+@helper Heart(string css = "")
 {
     @GlyphIcon.ByName("heart")
 }
-@helper Star()
+@helper Star(string css = "")
 {
     @GlyphIcon.ByName("star")
 }
-@helper StarEmpty()
+@helper StarEmpty(string css = "")
 {
     @GlyphIcon.ByName("star-empty")
 }
 @* Naming this User will hide HelperPage.User *@
-@helper UserIcon()
+@helper UserIcon(string css = "")
 {
     @GlyphIcon.ByName("user")
 }
-@helper Film()
+@helper Film(string css = "")
 {
     @GlyphIcon.ByName("film")
 }
-@helper ThLarge()
+@helper ThLarge(string css = "")
 {
     @GlyphIcon.ByName("th-large")
 }
-@helper Th()
+@helper Th(string css = "")
 {
     @GlyphIcon.ByName("th")
 }
-@helper ThList()
+@helper ThList(string css = "")
 {
     @GlyphIcon.ByName("th-list")
 }
-@helper Ok()
+@helper Ok(string css = "")
 {
     @GlyphIcon.ByName("ok")
 }
-@helper Remove()
+@helper Remove(string css = "")
 {
     @GlyphIcon.ByName("remove")
 }
-@helper ZoomIn()
+@helper ZoomIn(string css = "")
 {
     @GlyphIcon.ByName("zoom-in")
 }
-@helper ZoomOut()
+@helper ZoomOut(string css = "")
 {
     @GlyphIcon.ByName("zoom-out")
 }
-@helper Off()
+@helper Off(string css = "")
 {
     @GlyphIcon.ByName("off")
 }
-@helper Signal()
+@helper Signal(string css = "")
 {
     @GlyphIcon.ByName("signal")
 }
-@helper Cog()
+@helper Cog(string css = "")
 {
     @GlyphIcon.ByName("cog")
 }
-@helper Trash()
+@helper Trash(string css = "")
 {
     @GlyphIcon.ByName("trash")
 }
-@helper Home()
+@helper Home(string css = "")
 {
     @GlyphIcon.ByName("home")
 }
-@helper File()
+@helper File(string css = "")
 {
     @GlyphIcon.ByName("file")
 }
-@helper Time()
+@helper Time(string css = "")
 {
     @GlyphIcon.ByName("time")
 }
-@helper Road()
+@helper Road(string css = "")
 {
     @GlyphIcon.ByName("road")
 }
-@helper DownloadAlt()
+@helper DownloadAlt(string css = "")
 {
     @GlyphIcon.ByName("download-alt")
 }
-@helper Download()
+@helper Download(string css = "")
 {
     @GlyphIcon.ByName("download")
 }
-@helper Upload()
+@helper Upload(string css = "")
 {
     @GlyphIcon.ByName("upload")
 }
-@helper Inbox()
+@helper Inbox(string css = "")
 {
     @GlyphIcon.ByName("inbox")
 }
-@helper PlayCircle()
+@helper PlayCircle(string css = "")
 {
     @GlyphIcon.ByName("play-circle")
 }
-@helper Repeat()
+@helper Repeat(string css = "")
 {
     @GlyphIcon.ByName("repeat")
 }
-@helper Refresh()
+@helper Refresh(string css = "")
 {
     @GlyphIcon.ByName("refresh")
 }
-@helper ListAlt()
+@helper ListAlt(string css = "")
 {
     @GlyphIcon.ByName("list-alt")
 }
-@helper Lock()
+@helper Lock(string css = "")
 {
     @GlyphIcon.ByName("lock")
 }
-@helper Flag()
+@helper Flag(string css = "")
 {
     @GlyphIcon.ByName("flag")
 }
-@helper Headphones()
+@helper Headphones(string css = "")
 {
     @GlyphIcon.ByName("headphones")
 }
-@helper VolumeOff()
+@helper VolumeOff(string css = "")
 {
     @GlyphIcon.ByName("volume-off")
 }
-@helper VolumeDown()
+@helper VolumeDown(string css = "")
 {
     @GlyphIcon.ByName("volume-down")
 }
-@helper VolumeUp()
+@helper VolumeUp(string css = "")
 {
     @GlyphIcon.ByName("volume-up")
 }
-@helper QrCode()
+@helper QrCode(string css = "")
 {
     @GlyphIcon.ByName("qrcode")
 }
-@helper Barcode()
+@helper Barcode(string css = "")
 {
     @GlyphIcon.ByName("barcode")
 }
-@helper Tag()
+@helper Tag(string css = "")
 {
     @GlyphIcon.ByName("tag")
 }
-@helper Tags()
+@helper Tags(string css = "")
 {
     @GlyphIcon.ByName("tags")
 }
-@helper Book()
+@helper Book(string css = "")
 {
     @GlyphIcon.ByName("book")
 }
-@helper Bookmark()
+@helper Bookmark(string css = "")
 {
     @GlyphIcon.ByName("bookmark")
 }
-@helper Print()
+@helper Print(string css = "")
 {
     @GlyphIcon.ByName("print")
 }
-@helper Camera()
+@helper Camera(string css = "")
 {
     @GlyphIcon.ByName("camera")
 }
-@helper Font()
+@helper Font(string css = "")
 {
     @GlyphIcon.ByName("font")
 }
-@helper Bold()
+@helper Bold(string css = "")
 {
     @GlyphIcon.ByName("bold")
 }
-@helper Italic()
+@helper Italic(string css = "")
 {
     @GlyphIcon.ByName("italic")
 }
-@helper TextHeight()
+@helper TextHeight(string css = "")
 {
     @GlyphIcon.ByName("text-height")
 }
-@helper TextWidth()
+@helper TextWidth(string css = "")
 {
     @GlyphIcon.ByName("text-width")
 }
-@helper AlignLeft()
+@helper AlignLeft(string css = "")
 {
     @GlyphIcon.ByName("align-left")
 }
-@helper AlignCenter()
+@helper AlignCenter(string css = "")
 {
     @GlyphIcon.ByName("align-center")
 }
-@helper AlignRight()
+@helper AlignRight(string css = "")
 {
     @GlyphIcon.ByName("align-right")
 }
-@helper AlignJustify()
+@helper AlignJustify(string css = "")
 {
     @GlyphIcon.ByName("align-justify")
 }
-@helper List()
+@helper List(string css = "")
 {
     @GlyphIcon.ByName("list")
 }
-@helper IndentLeft()
+@helper IndentLeft(string css = "")
 {
     @GlyphIcon.ByName("indent-left")
 }
-@helper IndentRight()
+@helper IndentRight(string css = "")
 {
     @GlyphIcon.ByName("indent-right")
 }
-@helper FacetimeVideo()
+@helper FacetimeVideo(string css = "")
 {
     @GlyphIcon.ByName("facetime-video")
 }
-@helper Picture()
+@helper Picture(string css = "")
 {
     @GlyphIcon.ByName("picture")
 }
-@helper MapMarker()
+@helper MapMarker(string css = "")
 {
     @GlyphIcon.ByName("map-marker")
 }
-@helper Adjust()
+@helper Adjust(string css = "")
 {
     @GlyphIcon.ByName("adjust")
 }
-@helper Tint()
+@helper Tint(string css = "")
 {
     @GlyphIcon.ByName("tint")
 }
-@helper Edit()
+@helper Edit(string css = "")
 {
     @GlyphIcon.ByName("edit")
 }
-@helper Share()
+@helper Share(string css = "")
 {
     @GlyphIcon.ByName("share")
 }
-@helper Check()
+@helper Check(string css = "")
 {
     @GlyphIcon.ByName("check")
 }
-@helper Move()
+@helper Move(string css = "")
 {
     @GlyphIcon.ByName("move")
 }
-@helper StepBackward()
+@helper StepBackward(string css = "")
 {
     @GlyphIcon.ByName("step-backward")
 }
-@helper FastBackward()
+@helper FastBackward(string css = "")
 {
     @GlyphIcon.ByName("fast-backward")
 }
-@helper Backward()
+@helper Backward(string css = "")
 {
     @GlyphIcon.ByName("backward")
 }
-@helper Play()
+@helper Play(string css = "")
 {
     @GlyphIcon.ByName("play")
 }
-@helper Pause()
+@helper Pause(string css = "")
 {
     @GlyphIcon.ByName("pause")
 }
-@helper Stop()
+@helper Stop(string css = "")
 {
     @GlyphIcon.ByName("stop")
 }
-@helper Forward()
+@helper Forward(string css = "")
 {
     @GlyphIcon.ByName("forward")
 }
-@helper FastForward()
+@helper FastForward(string css = "")
 {
     @GlyphIcon.ByName("fast-forward")
 }
-@helper StepForward()
+@helper StepForward(string css = "")
 {
     @GlyphIcon.ByName("step-forward")
 }
-@helper Eject()
+@helper Eject(string css = "")
 {
     @GlyphIcon.ByName("eject")
 }
-@helper ChevronLeft()
+@helper ChevronLeft(string css = "")
 {
     @GlyphIcon.ByName("chevron-left")
 }
-@helper ChevronRight()
+@helper ChevronRight(string css = "")
 {
     @GlyphIcon.ByName("chevron-right")
 }
-@helper PlusSign()
+@helper PlusSign(string css = "")
 {
     @GlyphIcon.ByName("plus-sign")
 }
-@helper MinusSign()
+@helper MinusSign(string css = "")
 {
     @GlyphIcon.ByName("minus-sign")
 }
-@helper RemoveSign()
+@helper RemoveSign(string css = "")
 {
     @GlyphIcon.ByName("remove-sign")
 }
-@helper OkSign()
+@helper OkSign(string css = "")
 {
     @GlyphIcon.ByName("ok-sign")
 }
-@helper QuestionSign()
+@helper QuestionSign(string css = "")
 {
     @GlyphIcon.ByName("question-sign")
 }
-@helper InfoSign()
+@helper InfoSign(string css = "")
 {
     @GlyphIcon.ByName("info-sign")
 }
-@helper Screenshot()
+@helper Screenshot(string css = "")
 {
     @GlyphIcon.ByName("screenshot")
 }
-@helper RemoveCircle()
+@helper RemoveCircle(string css = "")
 {
     @GlyphIcon.ByName("remove-circle")
 }
-@helper OkCircle()
+@helper OkCircle(string css = "")
 {
     @GlyphIcon.ByName("ok-circle")
 }
-@helper BanCircle()
+@helper BanCircle(string css = "")
 {
     @GlyphIcon.ByName("ban-circle")
 }
-@helper ArrowLeft()
+@helper ArrowLeft(string css = "")
 {
     @GlyphIcon.ByName("arrow-left")
 }
-@helper ArrowRight()
+@helper ArrowRight(string css = "")
 {
     @GlyphIcon.ByName("arrow-right")
 }
-@helper ArrowUp()
+@helper ArrowUp(string css = "")
 {
     @GlyphIcon.ByName("arrow-up")
 }
-@helper ArrowDown()
+@helper ArrowDown(string css = "")
 {
     @GlyphIcon.ByName("arrow-down")
 }
-@helper ShareAlt()
+@helper ShareAlt(string css = "")
 {
     @GlyphIcon.ByName("share-alt")
 }
-@helper ResizeFull()
+@helper ResizeFull(string css = "")
 {
     @GlyphIcon.ByName("resize-full")
 }
-@helper ResizeSmall()
+@helper ResizeSmall(string css = "")
 {
     @GlyphIcon.ByName("resize-small")
 }
-@helper ExclamationSign()
+@helper ExclamationSign(string css = "")
 {
     @GlyphIcon.ByName("exclamation-sign")
 }
-@helper Gift()
+@helper Gift(string css = "")
 {
     @GlyphIcon.ByName("gift")
 }
-@helper Leaf()
+@helper Leaf(string css = "")
 {
     @GlyphIcon.ByName("leaf")
 }
-@helper Fire()
+@helper Fire(string css = "")
 {
     @GlyphIcon.ByName("fire")
 }
-@helper EyeOpen()
+@helper EyeOpen(string css = "")
 {
     @GlyphIcon.ByName("eye-open")
 }
-@helper EyeClose()
+@helper EyeClose(string css = "")
 {
     @GlyphIcon.ByName("eye-close")
 }
-@helper WarningSign()
+@helper WarningSign(string css = "")
 {
     @GlyphIcon.ByName("warning-sign")
 }
-@helper Plane()
+@helper Plane(string css = "")
 {
     @GlyphIcon.ByName("plane")
 }
-@helper Calendar()
+@helper Calendar(string css = "")
 {
     @GlyphIcon.ByName("calendar")
 }
-@helper Random()
+@helper Random(string css = "")
 {
     @GlyphIcon.ByName("random")
 }
-@helper Comment()
+@helper Comment(string css = "")
 {
     @GlyphIcon.ByName("comment")
 }
-@helper Magnet()
+@helper Magnet(string css = "")
 {
     @GlyphIcon.ByName("magnet")
 }
-@helper ChevronUp()
+@helper ChevronUp(string css = "")
 {
     @GlyphIcon.ByName("chevron-up")
 }
-@helper ChevronDown()
+@helper ChevronDown(string css = "")
 {
     @GlyphIcon.ByName("chevron-down")
 }
-@helper Retweet()
+@helper Retweet(string css = "")
 {
     @GlyphIcon.ByName("retweet")
 }
-@helper ShoppingCart()
+@helper ShoppingCart(string css = "")
 {
     @GlyphIcon.ByName("shopping-cart")
 }
-@helper FolderClose()
+@helper FolderClose(string css = "")
 {
     @GlyphIcon.ByName("folder-close")
 }
-@helper FolderOpen()
+@helper FolderOpen(string css = "")
 {
     @GlyphIcon.ByName("folder-open")
 }
-@helper ResizeVertical()
+@helper ResizeVertical(string css = "")
 {
     @GlyphIcon.ByName("resize-vertical")
 }
-@helper ResizeHorizontal()
+@helper ResizeHorizontal(string css = "")
 {
     @GlyphIcon.ByName("resize-horizontal")
 }
-@helper Hdd()
+@helper Hdd(string css = "")
 {
     @GlyphIcon.ByName("hdd")
 }
-@helper Bullhorn()
+@helper Bullhorn(string css = "")
 {
     @GlyphIcon.ByName("bullhorn")
 }
-@helper Bell()
+@helper Bell(string css = "")
 {
     @GlyphIcon.ByName("bell")
 }
-@helper Certificate()
+@helper Certificate(string css = "")
 {
     @GlyphIcon.ByName("certificate")
 }
-@helper ThumbsUp()
+@helper ThumbsUp(string css = "")
 {
     @GlyphIcon.ByName("thumbs-up")
 }
-@helper ThumbsDown()
+@helper ThumbsDown(string css = "")
 {
     @GlyphIcon.ByName("thumbs-down")
 }
-@helper HandRight()
+@helper HandRight(string css = "")
 {
     @GlyphIcon.ByName("hand-right")
 }
-@helper HandLeft()
+@helper HandLeft(string css = "")
 {
     @GlyphIcon.ByName("hand-left")
 }
-@helper HandUp()
+@helper HandUp(string css = "")
 {
     @GlyphIcon.ByName("hand-up")
 }
-@helper HandDown()
+@helper HandDown(string css = "")
 {
     @GlyphIcon.ByName("hand-down")
 }
-@helper CircleArrowRight()
+@helper CircleArrowRight(string css = "")
 {
     @GlyphIcon.ByName("circle-arrow-right")
 }
-@helper CircleArrowKeft()
+@helper CircleArrowKeft(string css = "")
 {
     @GlyphIcon.ByName("circle-arrow-left")
 }
-@helper CircleArrowUp()
+@helper CircleArrowUp(string css = "")
 {
     @GlyphIcon.ByName("circle-arrow-up")
 }
-@helper CircleArrowDown()
+@helper CircleArrowDown(string css = "")
 {
     @GlyphIcon.ByName("circle-arrow-down")
 }
-@helper Globe()
+@helper Globe(string css = "")
 {
     @GlyphIcon.ByName("globe")
 }
-@helper Wrench()
+@helper Wrench(string css = "")
 {
     @GlyphIcon.ByName("wrench")
 }
-@helper Tasks()
+@helper Tasks(string css = "")
 {
     @GlyphIcon.ByName("tasks")
 }
-@helper Filter()
+@helper Filter(string css = "")
 {
     @GlyphIcon.ByName("filter")
 }
-@helper Briefcase()
+@helper Briefcase(string css = "")
 {
     @GlyphIcon.ByName("briefcase")
 }
-@helper Fullscreen()
+@helper Fullscreen(string css = "")
 {
     @GlyphIcon.ByName("fullscreen")
 }
-@helper Dashboard()
+@helper Dashboard(string css = "")
 {
     @GlyphIcon.ByName("dashboard")
 }
-@helper Paperclip()
+@helper Paperclip(string css = "")
 {
     @GlyphIcon.ByName("paperclip")
 }
-@helper HeartEmpty()
+@helper HeartEmpty(string css = "")
 {
     @GlyphIcon.ByName("heart-empty")
 }
-@helper Link()
+@helper Link(string css = "")
 {
     @GlyphIcon.ByName("link")
 }
-@helper Phone()
+@helper Phone(string css = "")
 {
     @GlyphIcon.ByName("phone")
 }
-@helper Pushpin()
+@helper Pushpin(string css = "")
 {
     @GlyphIcon.ByName("pushpin")
 }
-@helper Usd()
+@helper Usd(string css = "")
 {
     @GlyphIcon.ByName("usd")
 }
-@helper Gbp()
+@helper Gbp(string css = "")
 {
     @GlyphIcon.ByName("gbp")
 }
-@helper Sort()
+@helper Sort(string css = "")
 {
     @GlyphIcon.ByName("sort")
 }
-@helper SortByAlphabet()
+@helper SortByAlphabet(string css = "")
 {
     @GlyphIcon.ByName("sort-by-alphabet")
 }
-@helper SortByAlphabetAlt()
+@helper SortByAlphabetAlt(string css = "")
 {
     @GlyphIcon.ByName("sort-by-alphabet-alt")
 }
-@helper SortByOrder()
+@helper SortByOrder(string css = "")
 {
     @GlyphIcon.ByName("sort-by-order")
 }
-@helper SortByOrderAlt()
+@helper SortByOrderAlt(string css = "")
 {
     @GlyphIcon.ByName("sort-by-order-alt")
 }
-@helper SortByAttributes()
+@helper SortByAttributes(string css = "")
 {
     @GlyphIcon.ByName("sort-by-attributes")
 }
-@helper SortByAttributesAlt()
+@helper SortByAttributesAlt(string css = "")
 {
     @GlyphIcon.ByName("sort-by-attributes-alt")
 }
-@helper Unchecked()
+@helper Unchecked(string css = "")
 {
     @GlyphIcon.ByName("unchecked")
 }
-@helper Expand()
+@helper Expand(string css = "")
 {
     @GlyphIcon.ByName("expand")
 }
-@helper CollapseDown()
+@helper CollapseDown(string css = "")
 {
     @GlyphIcon.ByName("collapse-down")
 }
-@helper CollapseUp()
+@helper CollapseUp(string css = "")
 {
     @GlyphIcon.ByName("collapse-up")
 }
-@helper LogIn()
+@helper LogIn(string css = "")
 {
     @GlyphIcon.ByName("log-in")
 }
-@helper Flash()
+@helper Flash(string css = "")
 {
     @GlyphIcon.ByName("flash")
 }
-@helper LogOut()
+@helper LogOut(string css = "")
 {
     @GlyphIcon.ByName("log-out")
 }
-@helper NewWindow()
+@helper NewWindow(string css = "")
 {
     @GlyphIcon.ByName("new-window")
 }
-@helper Record()
+@helper Record(string css = "")
 {
     @GlyphIcon.ByName("record")
 }
-@helper Save()
+@helper Save(string css = "")
 {
     @GlyphIcon.ByName("save")
 }
-@helper Open()
+@helper Open(string css = "")
 {
     @GlyphIcon.ByName("open")
 }
-@helper Saved()
+@helper Saved(string css = "")
 {
     @GlyphIcon.ByName("saved")
 }
-@helper Import()
+@helper Import(string css = "")
 {
     @GlyphIcon.ByName("import")
 }
-@helper Export()
+@helper Export(string css = "")
 {
     @GlyphIcon.ByName("export")
 }
-@helper Send()
+@helper Send(string css = "")
 {
     @GlyphIcon.ByName("send")
 }
-@helper FloppyDisk()
+@helper FloppyDisk(string css = "")
 {
     @GlyphIcon.ByName("floppy-disk")
 }
-@helper FloppySaved()
+@helper FloppySaved(string css = "")
 {
     @GlyphIcon.ByName("floppy-saved")
 }
-@helper FloppyRemove()
+@helper FloppyRemove(string css = "")
 {
     @GlyphIcon.ByName("floppy-remove")
 }
-@helper FloppySave()
+@helper FloppySave(string css = "")
 {
     @GlyphIcon.ByName("floppy-save")
 }
-@helper FloppyOpen()
+@helper FloppyOpen(string css = "")
 {
     @GlyphIcon.ByName("floppy-open")
 }
-@helper CreditCard()
+@helper CreditCard(string css = "")
 {
     @GlyphIcon.ByName("credit-card")
 }
-@helper Transfer()
+@helper Transfer(string css = "")
 {
     @GlyphIcon.ByName("transfer")
 }
-@helper Cutlery()
+@helper Cutlery(string css = "")
 {
     @GlyphIcon.ByName("cutlery")
 }
-@helper Header()
+@helper Header(string css = "")
 {
     @GlyphIcon.ByName("header")
 }
-@helper Compressed()
+@helper Compressed(string css = "")
 {
     @GlyphIcon.ByName("compressed")
 }
-@helper Earphone()
+@helper Earphone(string css = "")
 {
     @GlyphIcon.ByName("earphone")
 }
-@helper PhoneAlt()
+@helper PhoneAlt(string css = "")
 {
     @GlyphIcon.ByName("phone-alt")
 }
-@helper Tower()
+@helper Tower(string css = "")
 {
     @GlyphIcon.ByName("tower")
 }
-@helper Stats()
+@helper Stats(string css = "")
 {
     @GlyphIcon.ByName("stats")
 }
-@helper SdVideo()
+@helper SdVideo(string css = "")
 {
     @GlyphIcon.ByName("sd-video")
 }
-@helper HdVideo()
+@helper HdVideo(string css = "")
 {
     @GlyphIcon.ByName("hd-video")
 }
-@helper Subtitles()
+@helper Subtitles(string css = "")
 {
     @GlyphIcon.ByName("subtitles")
 }
-@helper SoundStereo()
+@helper SoundStereo(string css = "")
 {
     @GlyphIcon.ByName("sound-stereo")
 }
-@helper SoundDolby()
+@helper SoundDolby(string css = "")
 {
     @GlyphIcon.ByName("sound-dolby")
 }
-@helper Sound5()
+@helper Sound5(string css = "")
 {
     @GlyphIcon.ByName("sound-5-1")
 }
-@helper Sound6()
+@helper Sound6(string css = "")
 {
     @GlyphIcon.ByName("sound-6-1")
 }
-@helper Sound7()
+@helper Sound7(string css = "")
 {
     @GlyphIcon.ByName("sound-7-1")
 }
-@helper CopyrightMark()
+@helper CopyrightMark(string css = "")
 {
     @GlyphIcon.ByName("copyright-mark")
 }
-@helper RegistrationMark()
+@helper RegistrationMark(string css = "")
 {
     @GlyphIcon.ByName("registration-mark")
 }
-@helper CloudDownload()
+@helper CloudDownload(string css = "")
 {
     @GlyphIcon.ByName("cloud-download")
 }
-@helper CloudUpload()
+@helper CloudUpload(string css = "")
 {
     @GlyphIcon.ByName("cloud-upload")
 }
-@helper TreeConifer()
+@helper TreeConifer(string css = "")
 {
     @GlyphIcon.ByName("tree-conifer")
 }
-@helper TreeDeciduous()
+@helper TreeDeciduous(string css = "")
 {
     @GlyphIcon.ByName("tree-deciduous")
 }
